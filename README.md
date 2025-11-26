@@ -22,3 +22,26 @@ For our final project, we will compare a variety of supervised and unsupervised 
 These questions allow us to compare classical applied statistics vs. modern ML approaches while also evaluating how data preparation influences performance.
 
 
+---
+### iii. Key Methodology
+
+
+
+
+---
+### iv. Results
+
+
+
+
+---
+### v. How To Run the Code
+
+
+
+
+---
+---
+
+
+
