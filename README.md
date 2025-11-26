@@ -18,6 +18,6 @@ For our final project, we will compare a variety of supervised and unsupervised 
 1. Do neural networks outperform traditional machine learning models in predicting diabetes?
 2. How do different data preprocessing and feature engineering methods affect diabetes prediction accuracy?
    
-These questions allow us to compare classical statistics vs. modern ML approaches while also evaluating how data preparation influences performance.
+These questions allow us to compare classical applied statistics vs. modern ML approaches while also evaluating how data preparation influences performance.
 
 
