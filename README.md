@@ -12,3 +12,11 @@ m148 final project
 **Brief summary:**  
 This dataset contains 100,000 synthetic but clinically realistic patient profiles modeled after survey patterns from the CDC and medical research. It includes demographic, lifestyle, biometric, and laboratory features used to predict diabetes status, with no missing values and a moderately balanced target distribution. Because many indicators resemble real-world risk factors (such as blood pressure, cholesterol, physical activity, BMI, and education), the dataset is well suited for health-focused machine learning tasks that emphasize both predictive accuracy and interpretability.
 
+
+### ii. Project Idea 
+For our final project, we will compare a variety of supervised and unsupervised machine learning methods for diabetes prediction. We address two problems that are essential applications of the Data Science Life Cycle: 
+1. Do neural networks outperform traditional machine learning models in predicting diabetes?
+2. How do different data preprocessing and feature engineering methods affect diabetes prediction accuracy?
+These questions allow us to compare classical vs. modern ML approaches while also evaluating how data preparation influences performance.
+
+
