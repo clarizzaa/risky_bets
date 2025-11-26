@@ -42,6 +42,15 @@ These questions allow us to compare classical applied statistics vs. modern ML a
 
 ---
 ---
+## ***Appendix***
 
+### i. Explain the exploratory data analysis that you conducted. What was done to visualize your data and split your data for training and testing? 
+### ii. What data pre-processing and feature engineering (or data augmentation) did you complete on your project? 
+### iii. How was regression analysis applied in your project? What did you learn about your data set from this analysis and were you able to use this analysis for feature importance? Was regularization needed? 
+### iv. How was logistic regression analysis applied in your project? What did you learn about your data set from this analysis and were you able to use this analysis for feature importance? Was regularization needed? 
+### v. How were KNN, decision trees, or random forest used for classification on your data? What method worked best for your data and why was it good for the problem you were addressing? 
+### vi. How were PCA and clustering applied on your data? What method worked best for your data and why was it good for the problem you were addressing? 
+### vii. Explain how your project attempted to use a neural network on the data and the results of that attempt. 
+### viii. Give examples of hyperparameter tuning that you applied in preparing your project and how you chose the best parameters for models.
 
 
