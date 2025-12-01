@@ -6,7 +6,7 @@
 **Dataset name:** Diabetes Health Indicators Dataset   
 **Source:** Kaggle [link](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)  
 **Rows:** 100,000 patients  
-**Columns:** ~31 features 
+**Columns:** ~31 features  
 **File:** 'diabetes_data.csv'  
 
 **Brief summary:**  
