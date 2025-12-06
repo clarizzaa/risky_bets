@@ -48,7 +48,7 @@ These questions allow us to compare classical applied statistics vs. modern ML a
 
 First, apply info function to request general information about the dataset.
 
-![[Appendix.i.png]]
+![appendix](md_pictures/Appendix.i.png)
 
 There are 31 columns and 100000 rows, which means that there are 100000 individuals and
 30 predictors after excluding ’diagnoseddiabetes’ column. All 31 columns are complete, with
@@ -63,7 +63,7 @@ divide answers into different predictors.
 Apply describe function to request numerical details of each predictors.
 
 <p style="text-align: center;">Table 1: Summary of all Variables (Numerical + One-hot)</p>
-![[Screenshot 2025-12-05 at 3.00.58 PM.png]]
+![imgtwo](md_pictures/Screenshot2025-12-05at3.00.58PM.png)
 
 Observing the distribution of the target variable, it is found that nearly 60% of the individuals
 are diagnosed as diabetes. The target variable Diabetes is highly balanced, which is good for
@@ -75,17 +75,17 @@ on this dataset.
 
 Third, investigating collinearity of the predictors in order to delete super similar predictors. The following graph is the visualization of collinearity matrix:
 
-![[Screenshot 2025-12-05 at 2.52.28 PM.png]]
+![imgthree](md_pictures/Screenshot2025-12-05at2.52.28PM.png)
 
 Select predictors that are highly correlated with a threshold over 0.9 in absolute value. Predictors such as `ldl_cholesterol`, `hba1c`, and `diabetes_stage_Type2` are deleted in order to simplify the data.
 
 <p style="text-align: center;">Data Visualizaton</p>
 
-![[Screenshot 2025-12-05 at 2.56.59 PM.png]]
+![imgfour](md_pictures/Screenshot2025-12-05at2.56.59PM.png)
 <p style="text-align: center;">Figure 1: Left: Gender Count. Right: Diabetes Count by Gender.</p>
-![[Screenshot 2025-12-05 at 3.02.29 PM.png]]
+![imgfive](md_pictures/Screenshot2025-12-05at3.02.29PM.png)
 <p style="text-align: center;">Figure 1: Left: BMI vs Diabetes Risk Score. Right: Diet Score by Diabetes Status.</p>
-![[Screenshot 2025-12-05 at 3.04.05 PM.png]]
+![imgsix](md_pictures/Screenshot2025-12-05at3.04.05PM.png)
 <p style="text-align: center;">Figure 1: Left: Age Distribution by Diabetes Status. Right: Fasting vs Postprandial Glucose by Gender.</p>
 
 After these EDA processes, we split the dataset randomly into 80% training dataset and 20%
@@ -114,12 +114,12 @@ normalized to ensure comparability of coefficients. A 5-fold cross-validation pr
 applied to select the optimal regularization parameter α and to prevent overfitting. The Lasso
 regression model can be expressed as:
 
-![[Screenshot 2025-12-05 at 3.08.37 PM.png]]
+![imgseven](md_pictures/Screenshot2025-12-05at3.08.37PM.png)
 
 The coefficients of the well-performed model are:
 
 <p style="text-align: center;">Table 2: Lasso regression Coefficients for Diabetes Prediction </p>
-![[Screenshot 2025-12-05 at 3.19.46 PM.png]]
+![imgeight](md_pictures/Screenshot2025-12-05at3.19.46PM.png)
 Other features, such as age, BMI, waist-to-hip ratio, and physical activity, had smaller but
 nonzero coefficients. Many categorical variables (e.g., education level, employment status,
 ethnicity) were shrunk to zero by Lasso, indicating lower predictive importance.
@@ -141,12 +141,12 @@ dardized to have zero mean and unit variance. A 5-fold cross-validation procedur
 to select the optimal inverse regularization strength C and to prevent overfitting. The logistic
 regression model can be expressed as:
 
-![[Screenshot 2025-12-05 at 3.21.46 PM.png]]
+![imgnine](md_pictures/Screenshot 2025-12-05 at 3.21.46 PM.png)
 
 The coefficients of the well-performed model are:
 
 <p style="text-align: center;">Table 3: Logistic Regression Coefficients for Diabetes Prediction</p>
-![[Screenshot 2025-12-05 at 3.26.01 PM.png]]
+![imgten](md_pictures/Screenshot2025-12-05at3.26.01PM.png)
 
 
 Many predictors, such as physical activity, diet score, family history of diabetes, and categori-
