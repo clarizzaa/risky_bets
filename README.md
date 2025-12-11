@@ -344,9 +344,10 @@ For KNN,
 
 We tuned for k. 
 
--5
--15
--25
+- 15
+- 20
+- 25
+
 
 **Results**
 
