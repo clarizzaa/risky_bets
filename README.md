@@ -318,7 +318,7 @@ For tuning the learning rate, we tried:
 **Results**
 - lr=1e-2 produced best validation and test loss. 
 - lr=le-3 significantly overfitted high test and validation loss but training loss lowered 
-- lr=1e-4 the model learned to slowly and underperformed.
+- lr=1e-4 the model learned too slowly and underperformed.
 
 
 For tuning the epochs, we tried:
