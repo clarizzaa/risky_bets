@@ -339,3 +339,25 @@ For tuning batch size, we tried:
 **Results**
 
 a batch size of 64 with lr=1e-2 and epochs=15 resulted in unstable validation and test losses, jumps from .34 to .47 for validation loss even though the accuracy and training losses were lower on some runs so batch size of 32 seemed ideal.
+
+For KNN,
+
+We tuned for k. 
+
+-5
+-15
+-25
+
+**Results**
+
+Changes in k-values do not significantly shift the central tendency of predictions, as the median sits close to .6 for k=5, 15, and 25.
+
+Variance decreases as k increases, so a smaller k value, like 5, is more prone to overfitting, and a larger value, such as k, is more prone to underfitting. k=15 has a more balanced bias/variance and smoother predictions; it is the better-performing of the three k values.
+
+For Linear regression,
+
+We tuned the alphas to adjust the strengths of the L1 and L2 penalties for Lasso and Ridge, respectively.
+
+
+**Results**
+We searched over 50 possible alpha regularization values ranging from 10^-4 to 10, then used 5-fold cross-validation to select the optimal alpha value that minimized cross-validation error.
