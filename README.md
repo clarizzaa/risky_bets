@@ -337,4 +337,5 @@ For tuning batch size, we tried:
 - 64
 
 **Results**
+
 a batch size of 64 with lr=1e-2 and epochs=15 resulted in unstable validation and test losses, jumps from .34 to .47 for validation loss even though the accuracy and training losses were lower on some runs so batch size of 32 seemed ideal.
