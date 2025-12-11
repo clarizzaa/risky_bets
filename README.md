@@ -196,10 +196,15 @@ $$
 \right)
 $$
 
+`diabetes_score`: 
+
 $$
-\text{diabetes\_score} = \beta_0 + \sum_{i=1}^{p} \beta_i X_i
+\beta_0 + \sum_{i=1}^{p} \beta_i X_i
 $$
+
 where $\beta_i$ represents the coefficient for predictor $X_i$.
+
+
 
   
 The coefficients of the well-performed model are:
@@ -232,8 +237,6 @@ coefficients to zero.
 The dataset was split into training (80%) and testing (20%) sets, and all predictors were standardized to have zero mean and unit variance. A 5-fold cross-validation procedure was applied
 to select the optimal inverse regularization strength `C` and to prevent overfitting. The logistic
 regression model can be expressed as:
-
-The logistic regression model can be expressed as:
 
 $$
 P(Y = 1 \mid X) = \frac{1}{1 + \exp\!\left( -\left( \beta_0 + \sum_{i=1}^{p} \beta_i X_i \right) \right)}
