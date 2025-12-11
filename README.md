@@ -191,20 +191,16 @@ applied to select the optimal regularization parameter α and to prevent overfit
 regression model can be expressed as:
 
 $$
-\hat{\beta}
-= \arg\min_{\beta}
-\left\{
-\frac{1}{2n} \sum_{j=1}^{n}
-\left( y_j - \beta_0 - \sum_{i=1}^{p} \beta_i X_{ji} \right)^2
-+ \lambda \sum_{i=1}^{p} |\beta_i|
-\right\}
+\hat{\beta} = \arg\min_{\beta} \left( 
+  \frac{1}{2n} \sum_{j=1}^{n} \left( y_j - \beta_0 - \sum_{i=1}^{p} \beta_i X_{ij} \right)^2 + \lambda \sum_{i=1}^{p} |\beta_i|
+\right)
 $$
 
 $$
-\text{diabetes\_score}
-= \beta_0 + \sum_{i=1}^{p} \beta_i X_i
+\text{diabetes\_score} = \beta_0 + \sum_{i=1}^{p} \beta_i X_i
 $$
-where `β_i` represents the coefficient for predictor `X_i`.
+where $\beta_i$ represents the coefficient for predictor $X_i$.
+
   
 The coefficients of the well-performed model are:
 
@@ -237,11 +233,14 @@ The dataset was split into training (80%) and testing (20%) sets, and all predic
 to select the optimal inverse regularization strength `C` and to prevent overfitting. The logistic
 regression model can be expressed as:
 
+The logistic regression model can be expressed as:
+
 $$
-P(Y = 1 \mid X) =
-\frac{1}{1 + \exp\!\left( -\left( \beta_0 + \sum_{i=1}^{p} \beta_i X_i \right) \right)}
+P(Y = 1 \mid X) = \frac{1}{1 + \exp\!\left( -\left( \beta_0 + \sum_{i=1}^{p} \beta_i X_i \right) \right)}
 $$
-where `β_i` represents the coefficient for predictor `X_i`, and `P(Y = 1 | X)` is the probability that an individual has diabetes.
+
+where $\beta_i$ represents the coefficient for predictor $X_i$, and $P(Y = 1 \mid X)$ is the probability that an individual has diabetes.
+
   
 The coefficients of the well-performed model are:
 
