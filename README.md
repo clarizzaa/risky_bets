@@ -291,4 +291,50 @@ Classification report:
 
 ### vii. Explain how your project attempted to use a neural network on the data and the results of that attempt.
 
+Using PyTorch, we implemented a Multilayer Perceptron to evaluate improvement in diabetes prediction. 
+The neural network had the following architecture: 
+- an input layer dimension= total number of features =36,
+- a first hidden layer with 64 neurons and ReLU activation applied to it,
+- a second hidden layer with 32 neurons and ReLU activation applied to it, and an
+- Output Layer with 1 neuron
+to produce a logit for the binary classification (yes or no) for diabetes.
+
+We trained the model using BCELogitsLoss function and the Adam optimizer and used mini-batch gradient descent as it seemed it would work better than batch descent which is typically used for larger datasets. We split the dataset into train, validation, and test sets and selected mode based on performance from the validation set. We experimented with learning rates, batch sizes, and number of epochs to get the best performance configuration: 
+- learning rate 1e-2,
+- 15 epochs, Adam optimizer,
+- batch size 32.
+
+This configuration yielded validation accuracy of 83.49%, validation loss of 0.3659%, test accuracy of 83.60% and test loss of 0.3639%. The Validation and Test losses were the lowest of all the combinations we tried. Training fewer than 15 epochs like 12 epochs resulted in slight underfitting while training for 20-25 epochs increased validation and test loss as training loss which indicated overfitting. The Neural Network did not seem to significantly outperform the other models used. Logistic Regression seems to be the best model for predicting diabetes.
+
+
 ### viii. Give examples of hyperparameter tuning that you applied in preparing your project and how you chose the best parameters for models.
+
+We performed hyperparameter tuning for the Neural Network
+For tuning the learning rate, we tried: 
+- 1e-2
+- 1e-3
+- 1e-4
+
+**Results**
+- lr=1e-2 produced best validation and test loss. 
+- lr=le-3 significantly overfitted high test and validation loss but training loss lowered 
+- lr=1e-4 the model learned to slowly and underperformed.
+
+
+For tuning the epochs, we tried:
+- 12
+- 15
+- 20
+- 25
+
+**Results**
+- 12 epochs showed signs of slight underfitting with higher validation loss. 
+- 15 epochs had the best validation and test performance. 
+- 20 and 25 epochs indicated heavy overfitting.
+
+For tuning batch size, we tried:
+- 32
+- 64
+
+**Results**
+a batch size of 64 with lr=1e-2 and epochs=15 resulted in unstable validation and test losses, jumps from .34 to .47 for validation loss even though the accuracy and training losses were lower on some runs so batch size of 32 seemed ideal.
