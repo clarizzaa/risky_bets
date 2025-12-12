@@ -339,6 +339,8 @@ Overall random forests were most effective for this task because they balance fl
 
 We applied PCA to standardized data mainly to understand which variables contributed most to variation in the dataset and to visualize the data in a lower-dimensional space. The scree plot did not show a clear elbow, suggesting that variance was spread across many components and that our dataset was not well suited for aggressive dimensionality reduction using PCA.
 
+<img src="md_pictures/scree_plot.png">
+
 By examining the PCA loadings, we found that PC1 was largely driven by body metrics such as BMI and waist-to-hip ratio, PC2 was dominated by glucose measurements, and PC3 was related to smoking status. PCA was also used to visualize the data and clustering structure in three dimensions.
 
 K-means Clustering was evaluated using diabetes stage rather than diagnosed diabetes because diabetes stage has four categories, which aligns more naturally with a multi-cluster setting than a binary outcome. When clustering was performed on the full dataset, agreement with diabetes stage was very low (adjusted rand index, ARI ≈ 0.01). However, restricting clustering to PCA-identified, clinically relevant features (bmi, waist to hip ratio, glucose levels) improved agreement (ARI ≈ 0.15).
