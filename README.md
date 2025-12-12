@@ -288,21 +288,21 @@ Many predictors, such as physical activity, diet score, family history of diabet
 regularization, indicating low predictive importance.
 
 The best `C` (inverse of regularization strength) found by cross-validation was approximately
-`0.046`, and the training accuracy was `0.969`. The model achieved a test accuracy of `0.968`. The
+`0.046`, and the training accuracy was `0.834`. The model achieved a test accuracy of `0.834` as well. The
 confusion matrix and classification report are shown below:
 
 $$
 \text{Confusion Matrix} =
 \begin{bmatrix}
-7171 & 288 \\
-300  & 10850
+5723 & 1736 \\
+1362 & 9788
 \end{bmatrix}
 $$
 
 Classification report:
-- **Class 0 (No Diabetes)**: precision = 0.96, recall = 0.96, F1-score = 0.96
-- **Class 1 (Diabetes)**: precision = 0.97, recall = 0.97, F1-score = 0.97
-- **Overall Accuracy**: 0.97
+- **Class 0 (No Diabetes)**: precision = 0.81, recall = 0.77, F1-score = 0.79
+- **Class 1 (Diabetes)**: precision = 0.85, recall = 0.88, F1-score = 0.86
+- **Overall Accuracy**: 0.83
 
 
 
