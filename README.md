@@ -362,7 +362,7 @@ Overall, PCA was most effective for feature identification and visualization, wh
 <p align="center">
   <img src="md_pictures/clusters.png" width="400">
   <br>
-  <em>Figure VI.c k-means clustering in 3-d PC space.</em>
+  <em>Figure VI.c K-means Clustering in 3D PC Space.</em>
 </p>
 
 ### vii. Explain how your project attempted to use a neural network on the data and the results of that attempt.
