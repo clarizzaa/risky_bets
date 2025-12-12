@@ -76,7 +76,13 @@ For Neural Networks, we used them to model complex nonlinear relationships to pr
 
 ### iv. Results
 
-  
+All supervised models were evaluated on a held-out 20% test set using accuracy, precision, recall, and F1-score. For models with regularization, including linear and logistic regression, 5-fold cross-validation on the training set was used to select optimal hyperparameters and reduce overfitting.
+
+Across all models, **logistic regression emerged as the most effective and appropriate method for this task**. The L1-regularized logistic regression model achieved a test accuracy of **0.834**, with strong recall for diabetic individuals (**0.88**) and a balanced F1-score (**0.86**). Importantly, training and test performance were nearly identical, indicating good generalization. The learned coefficients aligned closely with known clinical risk factors, with glucose measurements, age, BMI, and waist-to-hip ratio contributing most strongly to predictions.
+
+More complex models did not provide meaningful performance improvements. Non-linear classifiers such as KNN, decision trees, and random forests achieved lower test accuracy, with the best-performing random forest reaching **0.845** accuracy and an F1-score of **0.866**, but at the cost of reduced interpretability. Neural networks likewise failed to outperform logistic regression despite additional tuning and model complexity, achieving test accuracy of approximately **0.836**.
+
+These results highlight an important conclusion: while modern machine learning workflows often emphasize complex architectures and unsupervised methods, **logistic regression remains a strong baseline for structured health data**. It performed competitively with more complex models while offering clear interpretability and transparency—key advantages in clinical and public health settings. A limitation of logistic regression is its assumption of linear decision boundaries; however, the strong empirical performance suggests that the dominant relationships in this dataset are largely linear and well captured by this model.
   
   
   
