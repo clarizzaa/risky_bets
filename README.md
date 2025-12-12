@@ -120,11 +120,13 @@ following graph is the visualization of collinearity matrix:
 </div>
 
 
-Select predictors that are highly correlated with a threshold over 0.9 in absolute value. Predictors such as `ldl_cholesterol`, `hba1c`, and `diabetes_stage_Type 2` are deleted in order to
+Select predictors that are highly correlated with a threshold over 0.9 in absolute value. Predictors such as `ldl_cholesterol`, and `hba1c` are deleted in order to
 simplify the data.
 
 
 <div align="center">
+
+Furthermore, we remove 'diabetes_risk_score', 'diabetes_stage_No Diabetes', 'diabetes_stage_Pre-Diabetes', 'diabetes_stage_Type 1', and 'diabetes_stage_Type 2' from the training data, as these varables are associated with 'diagnosed_diabetes'. 
 
 <strong>Data Visualizations</strong>
 
