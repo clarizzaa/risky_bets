@@ -315,7 +315,7 @@ Classification report:
 
 ### v. How were KNN, decision trees, or random forest used for classification on your data? What method worked best for your data and why was it good for the problem you were addressing?
 
-**Table.** Test-set performance of non-linear classification models for predicting diagnosed diabetes.
+***Table.** Test-set performance of non-linear classification models for predicting diagnosed diabetes.*
 
 | Model           | Accuracy | Precision | Recall | F1 |
 |-----------------|----------|-----------|--------|----|
