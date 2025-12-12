@@ -39,6 +39,34 @@ Given demographic information, medical history, and lifestyle behavior features,
 
 ### iii. Key Methodology
 
+
+To predict diabetes, we implemented supervised learning models such as linear regression, logistic regression, KNN, and Random Forests, as well as unsupervised learning models, including PCA with clustering and Neural Networks. 
+
+
+
+For linear regression, we applied two regularization methods to reduce overfitting: L2 regularization (Ridge) and L1 regularization (L1). We compared which penalty helps the model generalize better.
+
+
+
+For predicting the probability of diabetes, we used logistic regression. Logistic regression is well-suited to this kind of binary classification problem. We applied regularization to control overfitting and improve generalization. 
+
+
+
+To capture nonlinear decision boundaries, we used kNN and evaluated multiple k values to optimize the bias-variance trade-off. Smaller k-values showed signs of overfitting while larger ones underfitted.
+
+
+
+Random Forest was used to capture nonlinear relationships and feature interactions. It is an ensemble method composed of many decision trees that reduce variance with bagging, so it is less prone to overfitting than a single decision tree because multiple trees are averaged. 
+
+
+
+PCA was used for dimension reduction to focus on the most important features/components, as some were collinear. In the reduced feature space, we applied clustering methods to identify natural patterns in diabetes risk and gain insight into the dataset's structure.
+
+
+
+For Neural Networks, we used them to model complex nonlinear relationships to predict diabetes. It required tuning parameters such as the learning rate, number of epochs, and batch size to prevent overfitting.
+
+
   
   
   
