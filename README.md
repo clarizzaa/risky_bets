@@ -341,7 +341,7 @@ We applied PCA to standardized data mainly to understand which variables contrib
 
 By examining the PCA loadings, we found that PC1 was largely driven by body metrics such as BMI and waist-to-hip ratio, PC2 was dominated by glucose measurements, and PC3 was related to smoking status. PCA was also used to visualize the data and clustering structure in three dimensions.
 
-K-means Clustering was evaluated using diabetes stage rather than diagnosed diabetes because diabetes stage has four categories, which aligns more naturally with a multi-cluster setting than a binary outcome. When clustering was performed on the full dataset, agreement with diabetes stage was very low (ARI ≈ 0.01). However, restricting clustering to PCA-identified, clinically relevant features (bmi, waist to hip ratio, glucose levels) improved agreement (ARI ≈ 0.15).
+K-means Clustering was evaluated using diabetes stage rather than diagnosed diabetes because diabetes stage has four categories, which aligns more naturally with a multi-cluster setting than a binary outcome. When clustering was performed on the full dataset, agreement with diabetes stage was very low (adjusted rand index, ARI ≈ 0.01). However, restricting clustering to PCA-identified, clinically relevant features (bmi, waist to hip ratio, glucose levels) improved agreement (ARI ≈ 0.15).
 
 Overall, PCA was most effective for feature identification and visualization, while clustering on targeted feature subsets was more appropriate for evaluating alignment with diabetes stage.
 
