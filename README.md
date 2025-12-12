@@ -15,7 +15,7 @@
 
 **Columns:** ~31 features  
 
-**File:** 'diabetes_data.csv'  
+**File:** 'diabetes_dataset.csv'  
 
   
 
