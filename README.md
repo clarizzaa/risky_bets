@@ -48,7 +48,7 @@ For linear regression, we applied two regularization methods to reduce overfitti
 
 
 
-For predicting the probability of diabetes, we used logistic regression. Logistic regression is well-suited to this kind of binary classification problem. We applied regularization to control overfitting and improve generalization. 
+For predicting the probability of diabetes, we used logistic regression. Logistic regression is well-suited to this kind of binary classification problem. We applied regularization to control overfitting and improve generalization. We used logistic regression as the baseline to compare other models.
 
 
 
