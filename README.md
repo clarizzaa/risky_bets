@@ -86,7 +86,7 @@ For Neural Networks, we used them to model complex nonlinear relationships to pr
 ### v. How To Run the Code
 
 
-To run the code, download the Jupyter Notebook final-project.iypnb, open it in Google Colab, upload the dataset as diabetes_dataset.csv and run the notebook cell by cell from top to bottom. The notebook automatically performs necessary preprocessing steps, trains all models, and evaluates each of its performance. The user can adjust hyperparameters--learning rate, epochs, batch size, k-values, alphas, etc.--by modifying the corresponding cells and rerun the cells associated with the specific model.
+To run the code, download the Jupyter Notebook `final-project.iypnb`, open it in Google Colab, upload the dataset as `diabetes_dataset.csv` and run the notebook cell by cell from top to bottom. The notebook automatically performs necessary preprocessing steps, trains all models, and evaluates each of its performance. The user can adjust hyperparameters--learning rate, epochs, batch size, k-values, alphas, etc.--by modifying the corresponding cells and rerun the cells associated with the specific model.
 
 
   
@@ -314,6 +314,26 @@ Classification report:
 
 
 ### v. How were KNN, decision trees, or random forest used for classification on your data? What method worked best for your data and why was it good for the problem you were addressing?
+
+**Table.** Test-set performance of non-linear classification models for predicting diagnosed diabetes.
+
+| Model           | Accuracy | Precision | Recall | F1 |
+|-----------------|----------|-----------|--------|----|
+| Random Forest   | 0.845    | 0.901     | 0.832  | 0.866 |
+| Decision Tree   | 0.837    | 0.897     | 0.821  | 0.858 |
+| KNN (k = 15)    | 0.787    | 0.812     | 0.839  | 0.825 |
+
+We applied K-nearest neighbors (KNN), decision trees, and random forest classifiers to predict diagnosed diabetes using the processed feature set. These models were chosen because they can capture non-linear relationships between demographic, lifestyle, and clinical variables.
+
+KNN was trained on standardized features since it is distance-based. We evaluated several values of k (5, 15, and 25) and observed that increasing k reduced the variance of predicted probabilities without substantially changing their central tendency. Based on this bias–variance tradeoff, we selected k = 15. As shown in the table above, KNN achieved a test accuracy of 0.787 and an F1-score of 0.825, making it the weakest performer among the three models.
+
+Decision trees were trained on the cleaned but unscaled feature set. To reduce overfitting, we limited the maximum tree depth and required a minimum number of samples per leaf. This model improved performance over KNN, achieving a test accuracy of 0.837 and an F1-score of 0.858, while maintaining interpretability.
+
+Random forest classification further improved performance by aggregating predictions from many decision trees. This ensemble approach reduced variance and better captured complex feature interactions. As shown in the table above, the random forest achieved the highest test accuracy (0.845) and F1-score (0.866) among all evaluated methods, making it the best-performing non-linear classifier in this analysis.
+
+Overall random forests were most effective for this task because they balance flexibility and generalization in high-dimensional, structured health data. KNN provided a useful baseline for local similarity-based classification, while decision trees served as an interpretable intermediate model.
+
+
 
 ### vi. How were PCA and clustering applied on your data? What method worked best for your data and why was it good for the problem you were addressing?
 
