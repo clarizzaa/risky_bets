@@ -30,13 +30,9 @@ This dataset contains 100,000 synthetic but clinically realistic patient profile
 
 ### ii. Project Idea
 
-For our final project, we will compare a variety of supervised and unsupervised machine learning methods for diabetes prediction. We address two problems that are essential applications of the Data Science Life Cycle:
+Diabetes is a chronic metabolic disease that affects millions of individuals’ lives worldwide. Early identification of individuals at high risk is crucial for prevention, timely intervention, and reducing long-term health complications.
 
-1. Do neural networks outperform traditional machine learning models in predicting diabetes?
-
-2. How do different data preprocessing and feature engineering methods affect diabetes prediction accuracy?
-
-These questions allow us to compare classical applied statistics vs. modern ML approaches while also evaluating how data preparation influences performance.
+Given demographic information, medical history, and lifestyle behavior features, the goal is to predict whether an individual has diabetes. The central goal of this study is to evaluate whether modern neural network models outperform traditional machine learning approaches, such as linear regression, logistic regression, K-nearest neighbors (KNN), decision trees, and random forests, in predicting diabetes. Understanding these performance differences provides insight into the appropriate modeling strategy for structured health data and informs decisions on model deployment in real-world public health or clinical environments.
 
   
   
