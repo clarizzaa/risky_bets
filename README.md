@@ -359,6 +359,12 @@ K-means Clustering was evaluated using diabetes stage rather than diagnosed diab
 
 Overall, PCA was most effective for feature identification and visualization, while clustering on targeted feature subsets was more appropriate for evaluating alignment with diabetes stage.
 
+<p align="center">
+  <img src="md_pictures/clusters.png" width="400">
+  <br>
+  <em>Figure VI.c k-means clustering in 3-d PC space.</em>
+</p>
+
 ### vii. Explain how your project attempted to use a neural network on the data and the results of that attempt.
 
 Using PyTorch, we implemented a Multilayer Perceptron to evaluate improvement in diabetes prediction. 
