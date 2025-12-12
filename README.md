@@ -63,6 +63,10 @@ These questions allow us to compare classical applied statistics vs. modern ML a
 
 ### v. How To Run the Code
 
+
+To run the code, download the Jupyter Notebook finalproject.iypnb, open it in Google Colab, upload the dataset as diabetes_dataset.csv and run the notebook cell by cell from top to bottom. The notebook automatically performs necessary preprocessing steps, trains all models, and evaluates each of its performance. The user can adjust hyperparameters--learning rate, epochs, batch size, k-values, alphas, etc.--by modifying the corresponding cells and rerun the cells associated with the specific model.
+
+
   
   
   
